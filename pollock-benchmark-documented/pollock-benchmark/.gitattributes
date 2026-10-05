@@ -1,5 +1,0 @@
-# Keep Python/docs portable while preserving the CSV fixture's exact newlines.
-*.py text eol=lf
-*.md text eol=lf
-*.txt text eol=lf
-data/clean/source.csv -text

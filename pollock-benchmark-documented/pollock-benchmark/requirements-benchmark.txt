@@ -1,4 +1,0 @@
--r requirements-pollution.txt
-pandas
-mysql-connector-python
-python-dotenv
