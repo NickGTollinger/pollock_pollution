@@ -12,7 +12,7 @@ Current scope: one source dataset, ten isolated pollution categories, configured
 - SQLite command-line tools containing `sqlite3.exe`.
 - Git for publishing or cloning the repository.
 
-Each teammate installs their own environment and uses their own MySQL credentials. You do not need a shared database account or server. The project always uses a database named `pollock_benchmark`.
+Each user installs their own environment and uses their own MySQL credentials. You do not need a shared database account or server. The project always uses a database named `pollock_benchmark`.
 
 ## Setup on Windows / VS Code
 
@@ -155,7 +155,7 @@ Compare loaders within a category. Do not use a pooled average across all files 
 
 Configured adapters receive dialect/header/preamble/column-count metadata, but not expected cell values. We are measuring recovery with supplied configuration, not automatic dialect detection. SQLite's importer has fixed quoting conventions. Our non-Pandas configured adapters treat only the first header row as the header; the extra header row remains in data. This is an adapter limitation, not a statement that the underlying libraries cannot handle multirow headers.
 
-These metrics are Pollock-inspired and differ from upstream scoring. We do not compute the paper's simple or weighted aggregate Pollock score. See `README-benchmark.md` for more background.
+These metrics are Pollock-inspired and differ from upstream scoring. Currently we don't compute the paper's simple or weighted aggregate Pollock score. See `README-benchmark.md` for more background.
 
 ## Code map
 
@@ -207,7 +207,7 @@ git push -u origin main
 
 Replace the remote URL with your repository URL. Review the staged file list before committing. If the directory is already a Git repository, inspect its existing status and remote rather than rerunning initialization blindly. Ignoring a path does not untrack a file already committed.
 
-Teammates can clone the repository and follow Setup, then generate their own artifacts. To share experiment results later, select compact summary files deliberately instead of committing the entire generated output tree.
+Users can clone the repository and follow prior setup instructions, then generate their own output. To share experiment results later, select summary files deliberately instead of committing mass batches of data.
 
 ## Attribution and project status
 
