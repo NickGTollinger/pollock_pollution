@@ -1,0 +1,7 @@
+clevercsv
+lxml
+chardet
+regex
+joblib
+python-dateutil
+price-parser
