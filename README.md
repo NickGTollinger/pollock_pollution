@@ -187,23 +187,6 @@ SQLite and MySQL parse the input themselves. Python reads back already imported 
 | Pandas ParserError on a polluted case | Inspect the case; malformed fields can legitimately trigger an error |
 | Load succeeds but exact match is false | Inspect JSON data and diagnostics; success measures completion only |
 
-## Prepare and publish to GitHub
-
-The sharing package excludes local credentials, environments, generated data/results, and SQLite binaries. `.gitignore` keeps those out of new commits. The source fixture is retained and `.gitattributes` prevents Git from changing its line endings.
-
-1. Create an empty GitHub repository. Do not initialize it with a README if you use the commands below.
-2. From the prepared project root, run:
-
-```powershell
-git init
-git add .
-git status --short
-git diff --cached --stat
-git commit -m "Add configured Pollock benchmark and setup documentation"
-git branch -M main
-git remote add origin https://github.com/YOUR_ACCOUNT/YOUR_REPOSITORY.git
-git push -u origin main
-```
 
 Replace the remote URL with your repository URL. Review the staged file list before committing. If the directory is already a Git repository, inspect its existing status and remote rather than rerunning initialization blindly. Ignoring a path does not untrack a file already committed.
 
