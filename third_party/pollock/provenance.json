@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/HPI-Information-Systems/Pollock",
+  "revision": "bd2a646f4cf55d2bd4e76df511c9c9f675ae7bcc",
+  "retrieved_date": "2026-11-11",
+  "files": {
+    "evaluate_reference.py": {
+      "upstream_path": "evaluate.py",
+      "sha256": "493bcdb557c85fed95bb719d30eb41417066c38da8328edce0eb64bd77124add"
+    },
+    "metrics_reference.py": {
+      "upstream_path": "pollock/metrics.py",
+      "sha256": "e9d7d08b908e5e410b801acef59ff33abf5ead69ecf7a4e1df2fb7045932efc9"
+    },
+    "pollock_weights.json": {
+      "upstream_path": "pollock_weights.json",
+      "sha256": "94d0f5585f2d232fdac2eb13fca6dbd1c1a6f2f9ce6e2bcd5ab87e47a86f0788"
+    },
+    "LICENSE": {
+      "upstream_path": "LICENSE",
+      "sha256": "abcc7c6b32b83e085c40dbadc8a98ed564a2694dc28fc4d42e1cb774e7592159"
+    }
+  }
+}
